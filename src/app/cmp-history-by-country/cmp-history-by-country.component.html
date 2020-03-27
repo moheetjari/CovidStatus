@@ -1,0 +1,36 @@
+<div class="container" style="width: auto;height:auto;">
+    <div class="row" style="font-family: Monotype Corsiva;">
+        <h1> {{temp}} </h1>
+    </div>
+    <div class="row">
+        <kendo-grid [kendoGridBinding]="sortedData" [sortable]="true" [filterable]="true">
+            <kendo-grid-column field="record_date" title="Record Date" width="50">
+            </kendo-grid-column>
+
+            <kendo-grid-column field="total_cases" title="Total Cases" width="35">
+            </kendo-grid-column>
+            <kendo-grid-column field="total_deaths" title="Total Deaths" width="35">
+            </kendo-grid-column>
+            <kendo-grid-column field="total_recovered" title="Total Recovered" width="42">
+            </kendo-grid-column>
+
+            <kendo-grid-column field="active_cases" title="Active cases" width="40">
+            </kendo-grid-column>
+            <kendo-grid-column field="new_cases" title="New Cases" width="35">
+            </kendo-grid-column>
+            <kendo-grid-column field="new_deaths" title="New Deaths" width="35">
+            </kendo-grid-column>
+            <kendo-grid-column field="serious_critical" title="Serious Critical" width="40">
+            </kendo-grid-column>
+
+
+        </kendo-grid>
+    </div>
+</div>
+
+<ngx-spinner type="line-scale-pulse-out-rapid" size="default" color="#ffffff" bdColor="#222222" fullScreen="off">
+    <p style="font-size: 20px; color: white">
+        <!-- ♠ Do HANDWASH &nbsp;&nbsp; ♠ Don't touch FACE &nbsp;&nbsp;
+        ♠ keep DISTANCE <br>
+        <span style="margin-left: 200px;"> ♠ Stay HOME if you can </span> <br></p> -->
+</ngx-spinner>

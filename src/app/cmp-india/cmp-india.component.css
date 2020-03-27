@@ -1,0 +1,27 @@
+#odd-1{
+    background-color: #222;
+    color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#odd-2{
+    background-color: #222;
+    color: aliceblue;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+#even-1{
+    background-color: silver;
+    color: black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#even-2{
+    background-color: silver;
+    color: black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}

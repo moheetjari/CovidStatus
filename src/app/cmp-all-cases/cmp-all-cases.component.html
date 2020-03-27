@@ -1,0 +1,92 @@
+<div class="container" style="width:auto;height:auto;">
+
+    <div class="row">
+        <kendo-grid [kendoGridBinding]="allCases" [sortable]="true" [filterable]="true">
+            <!-- <kendo-grid-command-column width="30">
+                <ng-template kendoGridCellTemplate>
+                    <button kendoGridEditCommand [primary]="true" style="height: 20px; background-color: #222;"> GO
+                    </button>
+
+                </ng-template>
+            </kendo-grid-command-column> -->
+            <kendo-grid-column field="country_name" title="Country Name" style="width: auto;">
+            </kendo-grid-column>
+            <kendo-grid-column field="cases" title="Cases">
+            </kendo-grid-column>
+            <kendo-grid-column field="active_cases" title="Active Cases">
+            </kendo-grid-column>
+            <kendo-grid-column field="deaths" title="Deaths">
+            </kendo-grid-column>
+            <kendo-grid-column field="new_cases" title="New Cases">
+            </kendo-grid-column>
+            <kendo-grid-column field="new_deaths" title="New Deaths">
+            </kendo-grid-column>
+            <kendo-grid-column field="serious_critical" title="Serious Critical">
+            </kendo-grid-column>
+            <kendo-grid-column field="total_recovered" title="Total Recovered">
+            </kendo-grid-column>
+        </kendo-grid>
+    </div>
+
+
+
+
+
+
+    <!-- <div class="row">
+        <div class="col-md-3" style="font-size: 21px;line-height: 1;
+        letter-spacing: -0.031em;font-weight: 500;
+        font-style: italic;width: 160px;">Country Name</div>
+
+
+    <div class="col-md-3" style="font-size: 21px;line-height: 1;
+    letter-spacing: -0.031em;font-weight: 500;
+    font-style: italic;width: 160px;">Total Cases</div>
+
+    <div class="col-md-3" style="font-size: 21px;line-height: 1;
+    letter-spacing: -0.031em;font-weight: 500;
+    font-style: italic;width: 160px;">Active Cases</div>
+
+    <div class="col-md-3" style="font-size: 21px;line-height: 1;
+    letter-spacing: -0.031em;font-weight: 500;
+    font-style: italic;width: 160px;">Deaths</div>
+
+<div class="col-md-3" style="font-size: 21px;line-height: 1;
+    letter-spacing: -0.031em;font-weight: 500;
+    font-style: italic;width: 160px;">new_cases</div>
+
+<div class="col-md-3" style="font-size: 21px;line-height: 1;
+    letter-spacing: -0.031em;font-weight: 500;
+    font-style: italic;width: 160px;">new_deaths</div>
+
+<div class="col-md-3" style="font-size: 21px;line-height: 1;
+    letter-spacing: -0.031em;font-weight: 500;
+    font-style: italic;width: 160px;">serious_critical</div>
+
+<div class="col-md-3" style="font-size: 21px;line-height: 1;
+    letter-spacing: -0.031em;font-weight: 500;
+    font-style: italic;width: 160px;">total_recovered</div>
+
+    </div>
+    
+    <div class="row" *ngFor="let data of allCases;">
+        <hr>
+        <div class="col-md-2"> {{data['country_name']}}</div>
+        <div class="col-md-2"> {{data['cases']}}</div>
+        <div class="col-md-2"> {{data['active_cases']}}</div>
+        <div class="col-md-2"> {{data['deaths']}}</div>
+        <div class="col-md-2"> {{data['new_cases']}}</div>
+        <div class="col-md-2"> {{data['new_deaths']}}</div>
+        <div class="col-md-2"> {{data['serious_critical']}}</div>
+        <div class="col-md-2"> {{data['total_recovered']}}</div>
+    </div>
+     -->
+</div>
+
+
+<ngx-spinner type="line-scale-pulse-out-rapid" size="default" color="#ffffff" bdColor="#222222" fullScreen="off">
+    <p style="font-size: 20px; color: white">
+        <!-- ♠ Do HANDWASH &nbsp;&nbsp; ♠ Don't touch FACE &nbsp;&nbsp;
+        ♠ keep DISTANCE <br>
+        <span style="margin-left: 200px;"> ♠ Stay HOME if you can </span> <br></p> -->
+</ngx-spinner>
