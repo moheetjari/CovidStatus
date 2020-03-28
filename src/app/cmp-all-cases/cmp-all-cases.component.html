@@ -1,39 +1,32 @@
-<div class="container" style="width:auto;height:auto;">
+<!-- <div class="container" style="width:auto;height:auto;"> -->
 
-    <div class="row">
-        <kendo-grid [kendoGridBinding]="allCases" [sortable]="true" [filterable]="true">
-            <!-- <kendo-grid-command-column width="30">
-                <ng-template kendoGridCellTemplate>
-                    <button kendoGridEditCommand [primary]="true" style="height: 20px; background-color: #222;"> GO
-                    </button>
-
-                </ng-template>
-            </kendo-grid-command-column> -->
-            <kendo-grid-column media="(min-width: 576px)" field="country_name" title="Country Name">
+<!-- <div class="row"> -->
+<!-- <kendo-grid [kendoGridBinding]="allCases" [sortable]="true" [filterable]="true">
+            <kendo-grid-column field="country_name" title="Country Name">
             </kendo-grid-column>
-            <kendo-grid-column media="(min-width: 576px)" field="cases" title="Cases">
+            <kendo-grid-column field="cases" title="Cases">
             </kendo-grid-column>
-            <kendo-grid-column media="(min-width: 576px)" field="active_cases" title="Active Cases">
+            <kendo-grid-column field="active_cases" title="Active Cases">
             </kendo-grid-column>
-            <kendo-grid-column media="(min-width: 576px)" field="deaths" title="Deaths">
+            <kendo-grid-column field="deaths" title="Deaths">
             </kendo-grid-column>
-            <kendo-grid-column media="(min-width: 576px)" field="new_cases" title="New Cases">
+            <kendo-grid-column field="new_cases" title="New Cases">
             </kendo-grid-column>
-            <kendo-grid-column media="(min-width: 576px)" field="new_deaths" title="New Deaths">
+            <kendo-grid-column field="new_deaths" title="New Deaths">
             </kendo-grid-column>
-            <kendo-grid-column media="(min-width: 576px)" field="serious_critical" title="Serious Critical">
+            <kendo-grid-column field="serious_critical" title="Serious Critical">
             </kendo-grid-column>
-            <kendo-grid-column media="(min-width: 576px)" field="total_recovered" title="Total Recovered">
+            <kendo-grid-column field="total_recovered" title="Total Recovered">
             </kendo-grid-column>
-        </kendo-grid>
-    </div>
+        </kendo-grid> -->
+<!-- </div> -->
 
 
 
 
 
 
-    <!-- <div class="row">
+<!-- <div class="row">
         <div class="col-md-3" style="font-size: 21px;line-height: 1;
         letter-spacing: -0.031em;font-weight: 500;
         font-style: italic;width: 160px;">Country Name</div>
@@ -81,6 +74,47 @@
         <div class="col-md-2"> {{data['total_recovered']}}</div>
     </div>
      -->
+<!-- </div> -->
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col"> Country Name </th>
+            <th scope="col"> Cases </th>
+            <th scope="col"> Active Cases </th>
+            <th scope="col"> Deths </th>
+            <th scope="col"> New Deths </th>
+            <th scope="col"> Serious Critical </th>
+            <th scope="col"> Total Recovered </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of allCases">
+            <td> {{data.country_name}} </td>
+            <td> {{data.cases}} </td>
+            <td> {{data.active_cases}} </td>
+            <td> {{data.deaths}} </td>
+            <td> {{data.new_deaths}} </td>
+            <td> {{data.serious_critical}} </td>
+            <td> {{data.total_recovered}} </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<div class="row no-gutters bg-light position-relative">
+    <div class="col-md-6 position-static p-4 pl-md-0">
+        <h5 class="mt-0"> Copyright © 2020 All rights reserved.</h5>
+        <a href="https://github.com/drashtantsolanki" class="stretched-link">Drashtant Solanki</a>
+    </div>
+</div>
+<div class="row no-gutters bg-light position-relative">
+    <div class="col-md-6 position-static p-4 pl-md-0">
+        <div>
+            <h5 class="mt-0"> and</h5>
+            <a href="https://github.com/moheetjari" class="stretched-link">Mohit Jariwala</a>
+        </div>
+    </div>
 </div>
 
 
